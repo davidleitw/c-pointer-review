@@ -141,11 +141,14 @@ int calculate(int a, int b, calc_t method)
 ```
 
 > 感謝 @jserv 老師的提醒
+> 
 > 使用 `typedef` 定義的衍生型態，可用 `_t` 結尾做標示，也就是 `calc_t` 或 `ops_t`
 
 
 這樣子我們在看 `calculate` 宣告的時候就會清楚的知道第三個參數要把指定的 `method` 傳進去。
 完整的程式碼我放在 [GitHub](https://github.com/davidleitw/c-pointer-review)，可以把 code 載下來自己 run 一次，順便改改看寫法，觀察其中的不同。
+
+上面的舉例模擬了一些簡單的計算機功能，並且使用 `function pointer` 來實現，若想要看更完整的實現可參考 [rpn-calculator](https://github.com/hallzy/rpn-calculator/blob/master/src/operations.c)，這也是 @jserv 老師提供的網址，再次感謝提供。
 
 ## reference
 - [你所不知道的C語言：指標篇](https://hackmd.io/@sysprog/c-pointer)
